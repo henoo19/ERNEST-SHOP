@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: mediumpurple ;
+        }
+        li{
+            float: left;
+
+        }
+
+        li a, .dropbtn{
+            display: flex;
+            position: unset;
+            color: white;
+            font-size: 25px;
+            text-decoration: inherit;
+
+
+        }
+        .active{
+            background-color: lightcoral;
+            color: white;
+        }
+        li a:hover , .dropdown:hover .dropbtn{
+            background-color: purple;
+            color: white;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: lightblue;
+            min-width: 160px;
+            box-shadow: 5px 8px 10px 0px black;
+
+        }
+        .dropdown-content a{
+            color: white;
+            padding: 12px 16px;
+            text-decoration: inherit;
+            display: block;
+            text-align: left;
+
+        }
+        .dropdown-content a:hover{
+            background-color: purple;
+            color: ghostwhite;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+
+        }
+        h1,h2,h3,h4{
+            text-align: center;
+            color: purple;
+        }
+    </style>
+    <meta charset="UFT-8">
+    <title>Ernest</title>
+</head>
+<body>
+	<h1><font face="Castellar" size="8">ERNEST WATCH & ACCESSORIES</font></h1><P>DISPONIBLE POUR TOUS VOS ACHATS D'HABITS MONTRES ET PLUSIEURS ACCESSOIRES<p>
+	<body style="background-color: ghostwhite;">
+    <ul>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"> Articles habits</a>
+            <div class="dropdown-content">
+                <a href="femme.html">Vêtements femmes</a>
+                <a href="homme.html">Vêtements hommes</a>
+                <a href="enfant.html">Vêtements enfants</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Articles lunettes</a>
+            <div class="dropdown-content">
+                <a href="soleil.html">Carrera</a>
+                <a href="boss.html">Hugo Boss</a>
+                <a href="cartier.html">Cartier</a>
+                <a href="dolce.html">Dolce & Gabanna</a>
+                <a href="plus.html">Autres</a>
+            </div>
+        </li>
+        ><a href="ARTICLESMONTRES.html"> Articles montres</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Articlesportables</a>
+            <div class="dropdown-content">
+                <a href="iphone.html">Iphone</a>
+                <a href="samsung.html">Samsung</a>
+                <a href="Huawei.html">Huawei</a>
+                <a href="Infinx.html">Infinix</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Articleschaussures</a>
+            <div class="dropdown-content">
+                <a href="nike.html">Nike</a>
+                <a href="balenciaga.html">Balenciaga</a>
+                <a href="adidas.html">Adidas</a>
+                <a href="tods.html">tods</a>
+                <a href="otherpairs.html">autres</a>
+            </div>
+        </li>
+        <li><a href="ARTICLESLUNETTES.html"> Articles lunettes</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Maillot</a>
+            <div class="dropdown-content">
+                <a href="pays.html">COUNTRY KIT </a>
+                <a href="club.html">CLUB KIT </a>
+                <a href="autres.html">ANOTHER KIT </a>
+            <div>
+        </li>
+    </ul>
+    <h2>
+    	<P>
+    		<a href="">https://www.facebook.com/Ernest-watch-accessories</a>
+
+    	<p>
+    <h2>
+    	<p>cliquez sur ce bouton pour voir notre position</p>
+        <h2>la localisation est sur la carte</h2> 
+        <button onclick="getlocation();"> Show Position</button> 
+        <div id="demo" style="width: 1000px; height: 400px; margin-left: 200px;"></div> 
+       
+        <script src="https://maps.google.com/maps/api/js?sensor=false"> </script> 
+        
+        <script type="text/javascript"> 
+        function getlocation(){ 
+            if(navigator.geolocation){ 
+                navigator.geolocation.getCurrentPosition(showPos, showErr); 
+            }
+            else{
+                alert("Sorry! your Browser does not support Geolocation API")
+            }
+        } 
+        //Showing Current Poistion on Google Map
+        function showPos(position){ 
+            latt = position.coords.latitude; 
+            long = position.coords.longitude; 
+            var lattlong = new google.maps.LatLng(5.35600352381, -4.02358746973); 
+            var myOptions = { 
+                center: lattlong, 
+                zoom: 15, 
+                mapTypeControl: true, 
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL} 
+            } 
+            var maps = new google.maps.Map(document.getElementById("demo"), myOptions); 
+            var markers = 
+            new google.maps.Marker({position:lattlong, map:maps, title:"You are here!"}); 
+        } 
+
+        //Handling Error and Rejection
+             function showErr(error) {
+              switch(error.code){
+              case error.PERMISSION_DENIED:
+             alert("User denied the request for Geolocation API.");
+              break;
+             case error.POSITION_UNAVAILABLE:
+             alert("USer location information is unavailable.");
+            break;
+            case error.TIMEOUT:
+            alert("The request to get user location timed out.");
+            break;
+           case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.");
+            break;
+           }
+        }        </script> 
+
+</script>
+    	<p>
+    		<img src="C:\Users\HP\Desktop\HENOC\htlm\A.JPG" alt="" style="width:1300px;height:1000px;">
+    		<iframe width="420" height="315"
+             src="https://youtu.be/MoHnffhBwqs">
+            </iframe>
+    	</p>
+<body>
+<h4>the form novalidate attribute</h4>
+<form action="/action_page.php"novalidate>
+    <label for="email"> entrer votre email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit">
+</form>
+
+</html>
